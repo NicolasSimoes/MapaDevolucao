@@ -139,7 +139,7 @@ for produto in produtos:
     grupo_produto.add_to(mapa)
 
 # Adiciona o controle de camadas **apenas uma vez** fora do loop
-folium.LayerControl(collapsed=False).add_to(mapa)
+folium.LayerControl(collapsed=True).add_to(mapa)
 
 # Legenda customizada
 legend_html = '''
@@ -167,7 +167,7 @@ legend_html = '''
 ">
  <b>MARCADORES</b><br>
     <span style="color:green;">🟢</span>  Devolução Menor que 3%<br>
-    <span style="color:orange;">🟠</span> Devolução Entre 3% e 5%<br>
+    <span style="color:orange;">🟡</span> Devolução Entre 3% e 5%<br>
     <span style="color:red;">🔴</span>  Devolução Maior ou igual a 5%<br>
     <span style="color:gray;">⚫</span>  Sem Venda (cinza)<br>
     <br>CALOR 🦯<br>
